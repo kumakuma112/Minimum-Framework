@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ja" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- TODO 01. Title -->
+  <title>Minimum Framework</title>
+
+  <!-- TODO 02. Description -->
+  <meta name="description" content="###description###">
+  <meta name="keywords" content="###keywords###">
+
+  <!-- TODO 03. OGP -->
+  <!--  共通設定 -->
+  <meta property="og:title" content="###title###">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://xxxx.com/">
+  <meta property="og:image" content="http://xxxx.com/ogp.jpg">
+  <meta property="og:site_name" content="###[タイトル]###">
+  <meta property="og:description" content="###[説明文]###">
+  <!--  Facebook用設定 -->
+  <meta property="fb:app_id" content="App-ID（15文字の半角数字）">
+  <meta property="fb:admins" content="adminID（15文字の半角数字）">
+  <!--  Twitter用設定 -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="###@[ツイッターのアカウント名###">
+  <meta name="twitter:image:src" content="http://xxxx.com/ogp.jpg">
+
+  <!-- TODO 04. Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/css/common.bundle.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="./dist/js/common.bundle.js"></script>
+</head>
+
+<body>
+
+<!-- NOTE [HTML] Loader -->
+<div id="loader" class="loader">
+  <div class="loader_inner">
+    <span class="loader_inner_item"></span>
+  </div>
+</div>
+<div id="page" class="page">
+
+
+  <!-- NOTE [HTML] Navbar -->
+  <nav id="navbar" class="navbar fixed-top">
+    <a class="navbar_brand font-family-web fs-16 fs-md-24" href="/">Minimum Framework</a>
+    <button id="navbar_toggler" class="navbar_toggler" data-target="#navbar_collapse">
+      <span class="navbar_toggler_bar"></span>
+      <span class="navbar_toggler_bar"></span>
+      <span class="navbar_toggler_bar"></span>
+    </button>
+    <div id="navbar_collapse" class="navbar_collapse">
+      <ul class="menu mx-auto ml-md-0 font-family-web">
+        <li class="menu_item">
+          <a class="menu_item_link" href="#about">About</a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_item_link" href="#point">Point</a>
+        </li>
+        <li class="menu_item">
+          <a class="menu_item_link" href="#download">Download</a>
+        </li>
+      </ul>
+    </div>
+  </nav><!-- /.navbar -->
+
+
+
+  <!-- NOTE [HTML] Header -->
+  <header class="header cover text-center" role="banner">
+    <div class="cover_container">
+      <h1 class="cover_ttl fs-64 fs-md-96 text-primary font-family-web js-animate lightSpeedIn">
+        Minimum Framework
+      </h1>
+      <p class="cover_caption mt-20 fs-14 fs-md-24">
+        Bootstrap4ベースのミニマムなフレームワーク<br>
+      </p>
+      <div class="cover_btn mt-40 mt-md-64">
+        <a class="btn btn-primary btn-sm btn-md-lg font-family-web js-animate bounceIn" href="https://github.com/kumakuma112/Minimum-Framework" target="_blank">Download</a>
+      </div>
+    </div>
+  </header><!-- /.header -->
+
+
+
+  <!-- NOTE [HTML] Main -->
+  <main class="main" role="main">
+
+
+
+    <section id="about" class="sec sec-01">
+      <div class="container">
+        <h2 class="sec_ttl text-center fs-24 fs-md-32">小規模な案件でも<br>メンテナンス性を上げるには？</h2>
+        <p class="sec_p sec_p-read text-center mt-16 mt-md-24 fs-16 fs-md-20">
+          Minimum Frameworkでは、小規模な案件でもメンテナンス性を考え、<br class="d-none d-md-block">メジャーなフレームワークのBootstrap4を採用してます。
+        </p>
+      </div>
+    </section>
+
+
+
+    <section id="point" class="sec sec-02">
+      <div class="container">
+        <h2 class="sec_ttl text-center font-family-web">Minimum Frameworkの主な特徴</h2>
+        <p class="sec_p sec_p-read text-center mt-16 mt-md-24 fs-16 fs-md-20">
+          Bootstrap4の日本語化と10px基準に変更、アニメーションの追加などです。
+        </p>
+
+        <ul class="gridList row gutter-16 gutter-md-24 mt-24 mt-md-32">
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">SCSS</span>PostCSSでプレフィックスを自動反映</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">SCSS</span>フォントを日本語化</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">SCSS</span>1.0rem=10pxに変更</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">SCSS</span>汎用クラスの強化</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>ES6で記述</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>ローディングアニメーション追加</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>スクロールトップアニメーション追加</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>アンカーリンクアニメーション追加</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>Animate.CSS用のパララックスアニメーション追加</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">ライブラリ</span>Bootstrap・jQuery・Animate.cssをpackage.jsonで管理</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">管理</span>初期設定が必要な箇所にコメントアウト「TODO」を追加（エディタのプラグインで管理）</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">管理</span>多彩な案件でも使いまわせそうなgitignoreを追加</div></li>
+          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">管理</span>Webpackでビルド</div></li>
+        </ul>
+      </div>
+    </section>
+
+
+  </main><!-- /.main -->
+
+
+  <noscript>
+    <p class="noscript-message container">
+      このWebサイトの全ての機能を利用するためにはJavaScriptを有効にする必要があります。<br>
+      <a href="https://www.enable-javascript.com/ja/" target="_blank">
+        あなたのWebブラウザーでJavaScriptを有効にする方法
+      </a>
+      を参照してください。
+    </p>
+  </noscript>
+
+
+  <!-- NOTE [HTML] Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer_copylight"><small>&copy; 2017 Minimum Framework</small></p>
+    </div>
+  </footer>
+
+  <a id="scrollTop" class="scrollTop" href="#page"></a>
+
+
+</div><!-- /.page -->
+
+
+
+<!-- TODO 04. アナリティクス -->
+
+
+
+</body>
+
+</html>

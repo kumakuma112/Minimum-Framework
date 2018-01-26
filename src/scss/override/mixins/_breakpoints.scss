@@ -1,0 +1,8 @@
+// ブレイクポイント設定
+
+@mixin mq($size: lg) {
+  $min: map-get($grid-breakpoints, $size);
+  @media (min-width: $min) {
+    @content;
+  }
+}

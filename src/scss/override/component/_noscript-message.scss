@@ -1,0 +1,9 @@
+// noscript-message.scss
+.noscript-message {
+  padding: 1.6rem;
+  margin:  3.2rem auto;
+  text-align: center;
+  color: theme-color("danger");
+  border: 1px solid theme-color("danger");
+  background-color: lighten(theme-color("danger"), 40%);
+}

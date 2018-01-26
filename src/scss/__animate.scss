@@ -1,0 +1,115 @@
+// TODO 08. アニメーション設定
+// 使用しないアニメーションはコメントアウトにしてます
+
+// animation-name: slideInDown; // 名前
+// animation-duration: 0.8s; // アニメーション秒数
+// animation-delay: 1s; // 開始時間
+// animation-iteration-count: infinite; // ループ回数
+// animation-direction: normal; // 方向
+// animation-fill-mode: both; // モード
+// animation-timing-function: ease-out; // 変化の度合い
+// transform-origin: center bottom;
+
+
+
+// 追加アニメーション
+@import "override/component/loader01";
+// @import "override/component/loader02";
+
+
+// Animate.css カスタム
+// https://github.com/kumakuma112/animate.css
+
+@import "~animate.custom.css/source/_base";
+
+// @import "~animate.custom.css/source/attention_seekers/bounce";
+// @import "~animate.custom.css/source/attention_seekers/flash";
+// @import "~animate.custom.css/source/attention_seekers/headShake";
+// @import "~animate.custom.css/source/attention_seekers/jello";
+// @import "~animate.custom.css/source/attention_seekers/pulse";
+// @import "~animate.custom.css/source/attention_seekers/rubberBand";
+// @import "~animate.custom.css/source/attention_seekers/shake";
+// @import "~animate.custom.css/source/attention_seekers/swing";
+// @import "~animate.custom.css/source/attention_seekers/tada";
+// @import "~animate.custom.css/source/attention_seekers/wobble";
+
+@import "~animate.custom.css/source/bouncing_entrances/bounceIn";
+// @import "~animate.custom.css/source/bouncing_entrances/bounceInDown";
+// @import "~animate.custom.css/source/bouncing_entrances/bounceInLeft";
+// @import "~animate.custom.css/source/bouncing_entrances/bounceInRight";
+// @import "~animate.custom.css/source/bouncing_entrances/bounceInUp";
+
+// @import "~animate.custom.css/source/bouncing_exits/bounceOut";
+// @import "~animate.custom.css/source/bouncing_exits/bounceOutDown";
+// @import "~animate.custom.css/source/bouncing_exits/bounceOutLeft";
+// @import "~animate.custom.css/source/bouncing_exits/bounceOutRight";
+// @import "~animate.custom.css/source/bouncing_exits/bounceOutUp";
+
+[class*="fadeIn"] {opacity: 0;}
+@import "~animate.custom.css/source/fading_entrances/fadeIn";
+// @import "~animate.custom.css/source/fading_entrances/fadeInDown";
+// @import "~animate.custom.css/source/fading_entrances/fadeInLeft";
+// @import "~animate.custom.css/source/fading_entrances/fadeInRight";
+// @import "~animate.custom.css/source/fading_entrances/fadeInUp";
+// @import "~animate.custom.css/source/fading_entrances/fadeInDownBig";
+// @import "~animate.custom.css/source/fading_entrances/fadeInLeftBig";
+// @import "~animate.custom.css/source/fading_entrances/fadeInRightBig";
+// @import "~animate.custom.css/source/fading_entrances/fadeInUpBig";
+
+// @import "~animate.custom.css/source/fading_exits/fadeOut";
+// @import "~animate.custom.css/source/fading_exits/fadeOutDown";
+// @import "~animate.custom.css/source/fading_exits/fadeOutLeft";
+// @import "~animate.custom.css/source/fading_exits/fadeOutRight";
+// @import "~animate.custom.css/source/fading_exits/fadeOutUp";
+// @import "~animate.custom.css/source/fading_exits/fadeOutDownBig";
+// @import "~animate.custom.css/source/fading_exits/fadeOutLeftBig";
+// @import "~animate.custom.css/source/fading_exits/fadeOutRightBig";
+// @import "~animate.custom.css/source/fading_exits/fadeOutUpBig";
+
+// @import "~animate.custom.css/source/flippers/flip";
+// @import "~animate.custom.css/source/flippers/flipInX";
+// @import "~animate.custom.css/source/flippers/flipInY";
+// @import "~animate.custom.css/source/flippers/flipOutX";
+// @import "~animate.custom.css/source/flippers/flipOutY";
+
+@import "~animate.custom.css/source/lightspeed/lightSpeedIn";
+// @import "~animate.custom.css/source/lightspeed/lightSpeedOut";
+
+// @import "~animate.custom.css/source/rotating_exits/rotateIn";
+// @import "~animate.custom.css/source/rotating_exits/rotateInDownLeft";
+// @import "~animate.custom.css/source/rotating_exits/rotateInDownRight";
+// @import "~animate.custom.css/source/rotating_exits/rotateInUpLeft";
+// @import "~animate.custom.css/source/rotating_exits/rotateInUpRight";
+
+// @import "~animate.custom.css/source/rotating_entrances/rotateOut";
+// @import "~animate.custom.css/source/rotating_entrances/rotateOutDownLeft";
+// @import "~animate.custom.css/source/rotating_entrances/rotateOutDownRight";
+// @import "~animate.custom.css/source/rotating_entrances/rotateOutUpLeft";
+// @import "~animate.custom.css/source/rotating_entrances/rotateOutUpRight";
+
+// @import "~animate.custom.css/source/sliding_entrances/slideInDown";
+// @import "~animate.custom.css/source/sliding_entrances/slideInLeft";
+// @import "~animate.custom.css/source/sliding_entrances/slideInRight";
+// @import "~animate.custom.css/source/sliding_entrances/slideInUp";
+
+// @import "~animate.custom.css/source/sliding_exits/slideOutDown";
+// @import "~animate.custom.css/source/sliding_exits/slideOutLeft";
+// @import "~animate.custom.css/source/sliding_exits/slideOutRight";
+// @import "~animate.custom.css/source/sliding_exits/slideOutUp";
+
+// @import "~animate.custom.css/source/specials/hinge";
+// @import "~animate.custom.css/source/specials/rollIn";
+// @import "~animate.custom.css/source/specials/rollOut";
+
+// [class*="zoomIn"] {opacity: 0;}
+// @import "~animate.custom.css/source/zooming_entrances/zoomIn";
+// @import "~animate.custom.css/source/zooming_entrances/zoomInDown";
+// @import "~animate.custom.css/source/zooming_entrances/zoomInLeft";
+// @import "~animate.custom.css/source/zooming_entrances/zoomInRight";
+// @import "~animate.custom.css/source/zooming_entrances/zoomInUp";
+
+// @import "~animate.custom.css/source/zooming_exits/zoomOut";
+// @import "~animate.custom.css/source/zooming_exits/zoomOutDown";
+// @import "~animate.custom.css/source/zooming_exits/zoomOutLeft";
+// @import "~animate.custom.css/source/zooming_exits/zoomOutRight";
+// @import "~animate.custom.css/source/zooming_exits/zoomOutUp";

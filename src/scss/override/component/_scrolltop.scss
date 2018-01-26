@@ -1,0 +1,42 @@
+// scrolltop.scss
+.scrollTop {
+  opacity: 0;
+  display: block;
+  position: fixed;
+  bottom: 3.2rem;
+  right: 3.2rem;
+  z-index: $zindex-scrolltop;
+  width: 4.8rem;
+  height: 4.8rem;
+  background: url(../img/btn_scrolltop.png) center no-repeat;
+  background-size: cover;
+  &.isActive {
+    opacity: 0;
+    animation-name: scrollTopActive;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+  }
+  &.isNoActive {
+    animation-name: scrollTopNoActive;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes scrollTopActive {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollTopNoActive {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

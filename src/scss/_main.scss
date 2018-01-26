@@ -1,0 +1,44 @@
+// main
+
+// ========================================================
+// [SCSS] セクション
+// ========================================================
+.sec {
+  width: 100%;
+  padding: 5.6rem 0;
+  @include mq(md){
+    padding: 7.2rem 0;
+  };
+  &_ttl {
+    font-feature-settings : "palt";
+  }
+  &_p {}
+}
+
+.sec-01 {
+  background: $primary;
+  color: $white;
+
+}
+
+
+// ========================================================
+// [SCSS] グリッドリスト
+// ========================================================
+.gridList {
+  padding: 0;
+  list-style: none;;
+  &_item {
+    > .inner {
+      padding: 1.6rem;
+      border-radius: 0.4rem;
+      border: $primary solid 2px;
+    }
+    &_label {
+      display: block;
+      color: $primary;
+      font-weight: bold;
+
+    }
+  }
+}

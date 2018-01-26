@@ -1,0 +1,18 @@
+// ヘッダー
+
+.cover {
+  padding-top: 4.8rem;
+  max-height: 56rem;
+  background: $white;
+  @include mq(md){
+    max-height: 56rem;
+  }
+  &_ttl {
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}
+
+.header {
+  position: relative;
+}

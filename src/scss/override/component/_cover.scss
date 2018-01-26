@@ -1,0 +1,16 @@
+// cover.scss
+html,
+body,
+.page {
+  height: 100%;
+}
+
+.cover {
+  @extend .row;
+  @extend .gutter-0;
+  align-items: center;
+  height: 100%;
+  &_container {
+    @extend .col-12;
+  }
+}

@@ -1,0 +1,32 @@
+# TODO 00. エディタ設定
+root = true
+
+
+[*]
+# インデント
+# tab or space
+indent_size = 2
+indent_style = space
+
+# 文字コード
+# utf-8 or shift_jis
+charset = utf-8
+
+# 改行コード
+# crlf:windows lf:mac
+end_of_line = crlf
+
+#最終行に空行
+insert_final_newline = true
+
+# 行末の空白を削除
+trim_trailing_whitespace = true
+
+
+# その他の条件設定
+[*.md]
+trim_trailing_whitespace = false
+
+
+# 詳細は下記リンク
+# https://qiita.com/mii-chan/items/3471350ff4fca79825db
