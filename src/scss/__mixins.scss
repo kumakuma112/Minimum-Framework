@@ -36,7 +36,7 @@
 // Layout
 @import "~bootstrap/scss/mixins/clearfix";
 // @import "~bootstrap/scss/mixins/navbar-align";
-@import "~bootstrap/scss/mixins/grid-framework";
+// @import "~bootstrap/scss/mixins/grid-framework";
 @import "~bootstrap/scss/mixins/grid";
 @import "~bootstrap/scss/mixins/float";
 
@@ -45,3 +45,4 @@
 // 追加Mixin
 @import "override/mixins/reset-button";
 @import "override/mixins/breakpoints";
+@import "override/mixins/grid-framework";

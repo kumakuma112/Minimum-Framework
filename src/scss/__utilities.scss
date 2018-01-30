@@ -2,23 +2,37 @@
 // 使用しない汎用クラスはコメントアウトにしてます
 
 // Bootstrapユーティリティ
-@import "~bootstrap/scss/utilities/align";
-@import "~bootstrap/scss/utilities/background";
-@import "~bootstrap/scss/utilities/borders";
-@import "~bootstrap/scss/utilities/clearfix";
-@import "~bootstrap/scss/utilities/display";
+// @import "~bootstrap/scss/utilities/align";
+// @import "~bootstrap/scss/utilities/background";
+// @import "~bootstrap/scss/utilities/borders";
+// @import "~bootstrap/scss/utilities/clearfix";
+// @import "~bootstrap/scss/utilities/display";
 // @import "~bootstrap/scss/utilities/embed";
-@import "~bootstrap/scss/utilities/flex";
-@import "~bootstrap/scss/utilities/float";
-@import "~bootstrap/scss/utilities/position";
-@import "~bootstrap/scss/utilities/screenreaders";
-@import "~bootstrap/scss/utilities/sizing";
-@import "~bootstrap/scss/utilities/spacing";
-@import "~bootstrap/scss/utilities/text";
-@import "~bootstrap/scss/utilities/visibility";
+// @import "~bootstrap/scss/utilities/flex";
+// @import "~bootstrap/scss/utilities/float";
+// @import "~bootstrap/scss/utilities/position";
+// @import "~bootstrap/scss/utilities/screenreaders";
+// @import "~bootstrap/scss/utilities/sizing";
+// @import "~bootstrap/scss/utilities/spacing";
+// @import "~bootstrap/scss/utilities/text";
+// @import "~bootstrap/scss/utilities/visibility";
 
 
 
 // 追加ユーティリティ
 @import "override/utilities/font";
 @import "override/utilities/grid";
+@import "override/utilities/align";
+@import "override/utilities/background";
+@import "override/utilities/borders";
+@import "override/utilities/clearfix";
+@import "override/utilities/display";
+@import "override/utilities/embed";
+@import "override/utilities/flex";
+@import "override/utilities/float";
+@import "override/utilities/position";
+@import "override/utilities/screenreaders";
+@import "override/utilities/sizing";
+@import "override/utilities/spacing";
+@import "override/utilities/text";
+@import "override/utilities/visibility";

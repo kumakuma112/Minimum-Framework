@@ -5,13 +5,13 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $font-size-class, $length in $font-size-set {
-      .fs#{$infix}-#{$font-size-class} { font-size: $length !important; }
+      .fs#{$font-size-class}#{$infix} { font-size: $length !important; }
     }
 
   }
 }
 
 
-.font-family-web {
+.webfont {
   font-family: $font-family-web;
 }

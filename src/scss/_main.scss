@@ -6,13 +6,13 @@
 .sec {
   width: 100%;
   padding: 5.6rem 0;
-  @include mq(md){
+  @include mq(m){
     padding: 7.2rem 0;
   };
-  &_ttl {
+  .ttl {
     font-feature-settings : "palt";
   }
-  &_p {}
+  .p {}
 }
 
 .sec-01 {
@@ -23,18 +23,18 @@
 
 
 // ========================================================
-// [SCSS] グリッドリスト
+// [SCSS] ポイントリスト
 // ========================================================
-.gridList {
+.pointList {
   padding: 0;
   list-style: none;;
-  &_item {
+  .item {
     > .inner {
       padding: 1.6rem;
       border-radius: 0.4rem;
       border: $primary solid 2px;
     }
-    &_label {
+    .label {
       display: block;
       color: $primary;
       font-weight: bold;

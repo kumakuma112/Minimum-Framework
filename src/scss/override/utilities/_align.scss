@@ -1,0 +1,15 @@
+// stylelint-disable declaration-no-important
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      .vabl#{$infix}     { vertical-align: baseline !important; } // Browser default
+      .vat#{$infix}      { vertical-align: top !important; }
+      .vam#{$infix}      { vertical-align: middle !important; }
+      .vab#{$infix}      { vertical-align: bottom !important; }
+      .vatb#{$infix}     { vertical-align: text-bottom !important; }
+      .vatt#{$infix}     { vertical-align: text-top !important; }
+
+  }
+}

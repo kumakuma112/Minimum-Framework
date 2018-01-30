@@ -5,7 +5,7 @@
 @import "~bootstrap/scss/type";
 // @import "~bootstrap/scss/images";
 // @import "~bootstrap/scss/code";
-@import "~bootstrap/scss/grid";
+// @import "~bootstrap/scss/grid";
 // @import "~bootstrap/scss/tables";
 // @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
@@ -34,6 +34,7 @@
 
 
 // 追加コンポーネント
+@import "override/component/grid";
 @import "override/component/buttons";
 @import "override/component/cover";
 @import "override/component/noscript-message";

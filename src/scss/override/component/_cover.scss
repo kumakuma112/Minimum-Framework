@@ -7,10 +7,10 @@ body,
 
 .cover {
   @extend .row;
-  @extend .gutter-0;
+  @extend .gutter0;
   align-items: center;
   height: 100%;
-  &_container {
-    @extend .col-12;
+  .container-cover {
+    @extend .col12;
   }
 }

@@ -1,0 +1,54 @@
+// stylelint-disable declaration-no-important
+
+//
+// Text
+//
+
+// Alignment
+
+// .txt-justify  { text-align: justify !important; }
+// .txt-nowrap   { white-space: nowrap !important; }
+// .txt-truncate { @include text-truncate; }
+
+// Responsive alignment
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .al#{$infix}   { text-align: left !important; }
+    .ar#{$infix}  { text-align: right !important; }
+    .ac#{$infix} { text-align: center !important; }
+
+    // Weight and italics
+
+    // .flight  { font-weight: $font-weight-light !important; }
+    .normal#{$infix} { font-weight: $font-weight-normal !important; }
+    .bold#{$infix}   { font-weight: $font-weight-bold !important; }
+    // .fitalic { font-style: italic !important; }
+  }
+}
+
+// Transformation
+
+// .txt-lowercase  { text-transform: lowercase !important; }
+// .txt-uppercase  { text-transform: uppercase !important; }
+// .txt-capitalize { text-transform: capitalize !important; }
+
+
+
+// Contextual colors
+
+.white { color: #fff !important; }
+
+@each $color, $value in $theme-colors {
+  @include text-emphasis-variant(".#{$color}", $value);
+}
+
+// .txt-muted { color: $muted !important; }
+
+// Misc
+
+// .hide {
+//   @include text-hide();
+// }

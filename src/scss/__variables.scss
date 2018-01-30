@@ -52,26 +52,27 @@ $theme-colors: map-merge(("primary":$primary,"secondary":$secondary,"success":$s
 // ブレイクポイント 基本変更しない
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
+  s: 576px,
+  m: 768px,
+  l: 992px,
   xl: 1200px
 );
 
 // Grid containers
 // 各ブレイクポイントに対してのコンテンツのMAXの幅
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
+  s: 540px,
+  m: 720px,
+  l: 960px,
   xl: 1140px
 );
 
 //タブレットでリキッドにしたくない場合↓
 // $container-max-widths: (
-//   sm: 540px,
-//   md: 1140px,
-//   lg: 1140px,
+//   xs: 480px,
+//   s: 540px,
+//   m: 1140px,
+//   l: 1140px,
 //   xl: 1140px
 // );
 

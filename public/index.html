@@ -54,22 +54,22 @@
 
   <!-- NOTE [HTML] Navbar -->
   <nav id="navbar" class="navbar fixed-top">
-    <a class="navbar_brand font-family-web fs-16 fs-md-24" href="/">Minimum Framework</a>
-    <button id="navbar_toggler" class="navbar_toggler" data-target="#navbar_collapse">
-      <span class="navbar_toggler_bar"></span>
-      <span class="navbar_toggler_bar"></span>
-      <span class="navbar_toggler_bar"></span>
+    <a class="navbarBrand webfont fs16 fs24-m" href="/">Minimum Framework</a>
+    <button id="navbar_toggler" class="menuBtn" data-target="#navbar_collapse">
+      <span class="menuBar"></span>
+      <span class="menuBar"></span>
+      <span class="menuBar"></span>
     </button>
-    <div id="navbar_collapse" class="navbar_collapse">
-      <ul class="menu mx-auto ml-md-0 font-family-web">
-        <li class="menu_item">
-          <a class="menu_item_link" href="#about">About</a>
+    <div id="navbar_collapse" class="menu">
+      <ul class="inner mxauto ml0-m webfont">
+        <li class="menuItem">
+          <a class="menuLink" href="#about">About</a>
         </li>
-        <li class="menu_item">
-          <a class="menu_item_link" href="#point">Point</a>
+        <li class="menuItem">
+          <a class="menuLink" href="#point">Point</a>
         </li>
-        <li class="menu_item">
-          <a class="menu_item_link" href="#download">Download</a>
+        <li class="menuItem">
+          <a class="menuLink" href="https://github.com/kumakuma112/Minimum-Framework/releases/" target="_blank">Download</a>
         </li>
       </ul>
     </div>
@@ -78,16 +78,16 @@
 
 
   <!-- NOTE [HTML] Header -->
-  <header class="header cover text-center" role="banner">
-    <div class="cover_container">
-      <h1 class="cover_ttl fs-64 fs-md-96 text-primary font-family-web js-animate lightSpeedIn">
+  <header class="header cover ac" role="banner">
+    <div class="container-cover">
+      <h1 class="ttl fs64 fs96-m primary webfont js-animate lightSpeedIn">
         Minimum Framework
       </h1>
-      <p class="cover_caption mt-20 fs-14 fs-md-24">
+      <p class="caption mt20 fs14 fs24-m">
         Bootstrap4ベースのミニマムなフレームワーク<br>
       </p>
-      <div class="cover_btn mt-40 mt-md-64">
-        <a class="btn btn-primary btn-sm btn-md-lg font-family-web js-animate bounceIn" href="https://github.com/kumakuma112/Minimum-Framework" target="_blank">Download</a>
+      <div class="btnArea mt40 mt64-m">
+        <a class="btn btn-primary btn-sm btn-lg-m webfont js-animate bounceIn" href="https://github.com/kumakuma112/Minimum-Framework/releases/" target="_blank">Download</a>
       </div>
     </div>
   </header><!-- /.header -->
@@ -101,9 +101,9 @@
 
     <section id="about" class="sec sec-01">
       <div class="container">
-        <h2 class="sec_ttl text-center fs-24 fs-md-32">小規模な案件でも<br>メンテナンス性を上げるには？</h2>
-        <p class="sec_p sec_p-read text-center mt-16 mt-md-24 fs-16 fs-md-20">
-          Minimum Frameworkでは、小規模な案件でもメンテナンス性を考え、<br class="d-none d-md-block">メジャーなフレームワークのBootstrap4を採用してます。
+        <h2 class="ttl ac fs24 fs32-m">小規模な案件でも<br>メンテナンス性を上げるには？</h2>
+        <p class="p p-read ac mt16 mt24-m fs16 fs20-m">
+          Minimum Frameworkでは、小規模な案件でもメンテナンス性を考え、<br class="none block-m">メジャーなフレームワークのBootstrap4を採用してます。
         </p>
       </div>
     </section>
@@ -112,25 +112,25 @@
 
     <section id="point" class="sec sec-02">
       <div class="container">
-        <h2 class="sec_ttl text-center font-family-web">Minimum Frameworkの主な特徴</h2>
-        <p class="sec_p sec_p-read text-center mt-16 mt-md-24 fs-16 fs-md-20">
+        <h2 class="ttl ac webfont">Minimum Frameworkの主な特徴</h2>
+        <p class="p p-read ac mt16 mt24-m fs16 fs20-m">
           Bootstrap4の日本語化と10px基準に変更、アニメーションの追加などです。
         </p>
 
-        <ul class="gridList row gutter-16 gutter-md-24 mt-24 mt-md-32">
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">SCSS</span>PostCSSでプレフィックスを自動反映</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">SCSS</span>フォントを日本語化</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">SCSS</span>1.0rem=10pxに変更</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">SCSS</span>汎用クラスの強化</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>ES6で記述</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>ローディングアニメーション追加</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>スクロールトップアニメーション追加</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>アンカーリンクアニメーション追加</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">JS</span>Animate.CSS用のパララックスアニメーション追加</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">ライブラリ</span>Bootstrap・jQuery・Animate.cssをpackage.jsonで管理</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">管理</span>初期設定が必要な箇所にコメントアウト「TODO」を追加（エディタのプラグインで管理）</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">管理</span>多彩な案件でも使いまわせそうなgitignoreを追加</div></li>
-          <li class="gridList_item col-12 col-md-4 js-animate fadeIn"><div class="inner"><span class="gridList_item_label">管理</span>Webpackでビルド</div></li>
+        <ul class="pointList row gutter16 gutter24-m mt24 mt32-m">
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>PostCSSでプレフィックスを自動反映</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>フォントを日本語化</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>1.0rem=10pxに変更</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>汎用クラスの強化</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>ES6で記述</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>ローディングアニメーション追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>スクロールトップアニメーション追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>アンカーリンクアニメーション追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>Animate.CSS用のパララックスアニメーション追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">ライブラリ</span>Bootstrap・jQuery・Animate.cssをpackage.jsonで管理</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">管理</span>初期設定が必要な箇所にコメントアウト「TODO」を追加（エディタのプラグインで管理）</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">管理</span>多彩な案件でも使いまわせそうなgitignoreを追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">管理</span>Webpackでビルド</div></li>
         </ul>
       </div>
     </section>
@@ -153,7 +153,7 @@
   <!-- NOTE [HTML] Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
-      <p class="footer_copylight"><small>&copy; 2017 Minimum Framework</small></p>
+      <p class="copylight"><small>&copy; 2017 Minimum Framework</small></p>
     </div>
   </footer>
 

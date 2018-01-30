@@ -5,11 +5,11 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $key, $value in $grid-gutter-width-set {
-      .gutter#{$infix}-#{$key} {
+      .gutter#{$key}#{$infix} {
         margin-left: -($value / 2) !important;
         margin-right: -($value / 2) !important;
         margin-bottom: -($value) !important;
-        > [class*="col-"] {
+        > [class*="col"] {
           padding-left: ($value / 2) !important;
           padding-right: ($value / 2) !important;
           margin-bottom: $value !important;
@@ -19,6 +19,5 @@
         }
       }
     }
-
   }
 }

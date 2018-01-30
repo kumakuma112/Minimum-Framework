@@ -1,8 +1,8 @@
 {
-  "name": "Mini-Boo",
-  "version": "0.0.1",
+  "name": "Minimum-Framework",
+  "version": "1.1.0",
   "description": "Bootstrapをベースにしたミニマムなフレームワーク。",
-  "author": "kumakuma112 (https://github.com/kumakuma112/Mini-Boo)",
+  "author": "kumakuma112 (https://github.com/kumakuma112/Minimum-Framework)",
   "license": "MIT",
   "main": "",
   "scripts": {

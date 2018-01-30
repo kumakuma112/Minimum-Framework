@@ -4,13 +4,13 @@
 // NOTE [SCSS] メニュー
 // ========================================================
 .navbar {
-  @extend .d-flex;
+  @extend .flex;
   @extend .flex-row;
-  @extend .align-items-center;
+  @extend .ai-center;
   padding: .8rem 1.6rem;
   background: $black;
   color: #fff;
-  @include mq(md){
+  @include mq(m){
     padding: .8rem 1.6rem;
   }
   a {
@@ -20,27 +20,27 @@
     }
   }
 
-  &_brand {
-    @extend .mr-auto;
+  .navbarBrand {
+    @extend .mrauto;
   }
-  &_collapse {
-    .menu {
+  .menu {
+    .inner {
       list-style: none;
       padding: 0;
       margin: 0;
-      @extend .d-flex;
-      @extend .flex-column;
-      @extend .flex-md-row;
-      @extend .align-items-center;
-      .menu_item {
+      @extend .flex;
+      @extend .flex-col;
+      @extend .flex-row-m;
+      @extend .ai-center;
+      .menuItem {
         padding: 0 1.6rem;
       }
     }
 
   }
 
-  &_toggler {
-    @include mq(md){
+  .menuBtn {
+    @include mq(m){
       display: none;
     }
   }
@@ -51,11 +51,11 @@
 // ========================================================
 // NOTE [SCSS] メニュー　SP
 // ========================================================
-.navbar_toggler {
+.menuBtn {
   @include reset-button;
   position: relative;
   z-index: $zindex-modal + 1;
-  &_bar {
+  .menuBar {
     display: block;
     height: 2px;
     border-radius: 1px;
@@ -76,7 +76,7 @@
     }
   }
   &.isOpened {
-    .navbar_toggler_bar {
+    .menuBar {
       &:nth-of-type(1) {
         transform: translateY(8px) rotate(45deg);
       }
@@ -90,10 +90,10 @@
       }
     }
   }
-  & + .navbar_collapse {
-    @extend .d-flex;
-    @extend .justify-content-center;
-    @extend .align-items-center;
+  & + .menu {
+    @extend .flex;
+    @extend .jc-center;
+    @extend .ai-center;
     opacity: 0;
     overflow: hidden;
   	position: fixed;
@@ -108,8 +108,8 @@
   	text-align: center;
     font-size: $font-size-lg;
     background: rgba($black,0.96);
-    @include mq(md){
-      @extend .justify-content-md-start;
+    @include mq(m){
+      @extend .jc-start-m;
       opacity: 1;
       position: static;
       top: inherit;
@@ -122,13 +122,13 @@
       background: none;
     }
   }
-  &.isOpened + .navbar_collapse {
+  &.isOpened + .menu {
     height: 100%;
     opacity: 1;
     animation-name: gNavOpend;
     animation-duration: 0.4s;
   }
-  &.isClosed + .navbar_collapse {
+  &.isClosed + .menu {
     animation-name: gNavClosed;
     animation-duration: 0.4s;
   }
