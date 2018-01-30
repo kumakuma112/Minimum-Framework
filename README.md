@@ -249,10 +249,10 @@ Bootstrap4の汎用クラスは長すぎるので、省略形の汎用クラス�
 
 | | 全て ≧0px | 小以上 ≧576px | 中以上 ≧768px | 大以上 ≧992px | 特大 ≧1200px |
 |:--|:--:|:--:|:--:|:--:|:--:|
-|左寄せ        |.left |.left-s|.left-m|.left-l|.left-xl|
-|右寄せ        |.right|.right-s|.right-m|.right-l|.right-xl|
-|中央揃え       |.center|.center-s|.center-m|.center-l|.center-xl|
-|ベースライン揃え|.baseline|.baseline-s|.baseline-m|.baseline-l|.baseline-xl|
+|左寄せ        |.al |.al-s|.al-m|.al-l|.al-xl|
+|右寄せ        |.ar|.ar-s|.ar-m|.ar-l|.ar-xl|
+|中央揃え       |.ac|.ac-s|.ac-m|.ac-l|.ac-xl|
+|ベースライン揃え|.vabl|.vabl-s|.vabl-m|.vabl-l|.vabl-xl|
 |上端揃え       |.vat|.vat-s|.vat-m|.vat-l|.vat-xl|
 |中央揃え       |.vam|.vam-s|.vam-m|.vam-l|.vam-xl|
 |下端揃え       |.vab|.vab-s|.vab-m|.vab-l|.vab-xl|
