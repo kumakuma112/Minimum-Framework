@@ -3,13 +3,17 @@
   opacity: 0;
   display: block;
   position: fixed;
-  bottom: 3.2rem;
-  right: 3.2rem;
+  bottom: 1.6rem;
+  right: 1.6rem;
   z-index: $zindex-scrolltop;
   width: 4.8rem;
   height: 4.8rem;
-  background: url(../img/btn_scrolltop.png) center no-repeat;
+  background: url(../../public/img/btn_scrolltop.png) center no-repeat;
   background-size: cover;
+  @include mq(md){
+    bottom: 3.2rem;
+    right: 3.2rem;
+  }
   &.isActive {
     opacity: 0;
     animation-name: scrollTopActive;

@@ -54,7 +54,7 @@
 
   <!-- NOTE [HTML] Navbar -->
   <nav id="navbar" class="navbar fixed-top">
-    <a class="navbarBrand webfont fs16 fs24-m" href="/">Minimum Framework</a>
+    <a class="navbarBrand webfont fs20 fs24-m" href="/">Minimum Framework</a>
     <button id="navbar_toggler" class="menuBtn" data-target="#navbar_collapse">
       <span class="menuBar"></span>
       <span class="menuBar"></span>
@@ -80,14 +80,14 @@
   <!-- NOTE [HTML] Header -->
   <header class="header cover ac" role="banner">
     <div class="container-cover">
-      <h1 class="ttl fs64 fs96-m primary webfont js-animate lightSpeedIn">
+      <h1 class="ttl fs64 fs96-m primary webfont js-animate lightSpeedIn delay3">
         Minimum Framework
       </h1>
       <p class="caption mt20 fs14 fs24-m">
         Bootstrap4ベースのミニマムなフレームワーク<br>
       </p>
       <div class="btnArea mt40 mt64-m">
-        <a class="btn btn-primary btn-sm btn-lg-m webfont js-animate bounceIn" href="https://github.com/kumakuma112/Minimum-Framework/releases/" target="_blank">Download</a>
+        <a class="btn btn-primary btn-sm btn-lg-m webfont js-animate bounceIn delay8" href="https://github.com/kumakuma112/Minimum-Framework/releases/" target="_blank">Download</a>
       </div>
     </div>
   </header><!-- /.header -->
@@ -114,23 +114,27 @@
       <div class="container">
         <h2 class="ttl ac webfont">Minimum Frameworkの主な特徴</h2>
         <p class="p p-read ac mt16 mt24-m fs16 fs20-m">
-          Bootstrap4の日本語化と10px基準に変更、アニメーションの追加などです。
+          Bootstrap4のSCSSファイルをベースに、日本語化・10px基準の数値に変更、コンポーネント削除、汎用クラスの強化をしてます。<br>
+          オリジナルのBootstrapと比べ、キャンペーンサイトやペラページの小規模な案件で、使いやすいように調整してます。
         </p>
 
         <ul class="pointList row gutter16 gutter24-m mt24 mt32-m">
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>PostCSSでプレフィックスを自動反映</div></li>
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>フォントを日本語化</div></li>
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>1.0rem=10pxに変更</div></li>
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>汎用クラスの強化</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>Webpackでビルド</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>WebpackとPostCSSでプレフィックス反映 </div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>BootstrapのSCSSを日本語に変更</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>BootstrapのSCSSを1remを16pxから10pxに変更</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>Bootstrapの汎用クラスを短縮&強化</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>Bootstrapのレスポンシブのクラスを短縮（s,m,l,xl）</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">SCSS</span>Bootstrapの学習コストが高いコンポーネント系を削除</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>Webpackで1ファイルにビルド</div></li>
           <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>ES6で記述</div></li>
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>ローディングアニメーション追加</div></li>
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>スクロールトップアニメーション追加</div></li>
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>アンカーリンクアニメーション追加</div></li>
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>Animate.CSS用のパララックスアニメーション追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>ローディングJS追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>ハンバーガーメニューJS追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>アンカーリンクJS追加</div></li>
+          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">JS</span>Animate.CSS用のパララックスアニメーションJS追加</div></li>
           <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">ライブラリ</span>Bootstrap・jQuery・Animate.cssをpackage.jsonで管理</div></li>
           <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">管理</span>初期設定が必要な箇所にコメントアウト「TODO」を追加（エディタのプラグインで管理）</div></li>
           <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">管理</span>多彩な案件でも使いまわせそうなgitignoreを追加</div></li>
-          <li class="item col12 col4-m js-animate fadeIn"><div class="inner"><span class="label">管理</span>Webpackでビルド</div></li>
         </ul>
       </div>
     </section>
@@ -153,7 +157,7 @@
   <!-- NOTE [HTML] Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
-      <p class="copylight"><small>&copy; 2017 Minimum Framework</small></p>
+      <p class="copylight"><small>&copy; 2018 Minimum Framework</small></p>
     </div>
   </footer>
 

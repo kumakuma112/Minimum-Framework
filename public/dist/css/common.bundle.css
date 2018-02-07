@@ -459,6 +459,142 @@ body {
   -webkit-animation-duration: .75s;
           animation-duration: .75s; }
 
+.delay1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+
+.delay2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+.delay3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+
+.delay4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+
+.delay5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+
+.delay8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s; }
+
+.delay10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
+
+.delay15 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s; }
+
+.delay16 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s; }
+
+.delay20 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s; }
+
+.delay24 {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s; }
+
+.delay25 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s; }
+
+.delay30 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s; }
+
+.delay32 {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s; }
+
+.delay35 {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s; }
+
+.delay40 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s; }
+
+.delay45 {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s; }
+
+.delay48 {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s; }
+
+.delay50 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s; }
+
+.delay55 {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s; }
+
+.delay56 {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s; }
+
+.delay60 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s; }
+
+.delay64 {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s; }
+
+.delay65 {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s; }
+
+.delay70 {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s; }
+
+.delay72 {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s; }
+
+.delay75 {
+  -webkit-animation-delay: 7.5;
+          animation-delay: 7.5; }
+
+.delay80 {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s; }
+
+.delay85 {
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s; }
+
+.delay88 {
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s; }
+
+.delay90 {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s; }
+
+.delay95 {
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s; }
+
+.delay96 {
+  -webkit-animation-delay: 9.6s;
+          animation-delay: 9.6s; }
+
+.delay100 {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s; }
+
 @-webkit-keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -2228,13 +2364,17 @@ body,
   opacity: 0;
   display: block;
   position: fixed;
-  bottom: 3.2rem;
-  right: 3.2rem;
+  bottom: 1.6rem;
+  right: 1.6rem;
   z-index: 1070;
   width: 4.8rem;
   height: 4.8rem;
   background: url(../../img/btn_scrolltop.png) center no-repeat;
   background-size: cover; }
+  @media (min-width: null) {
+    .scrollTop {
+      bottom: 3.2rem;
+      right: 3.2rem; } }
   .scrollTop.isActive {
     opacity: 0;
     -webkit-animation-name: scrollTopActive;
@@ -6255,7 +6395,6 @@ a.link:hover, a.link:focus {
   visibility: hidden !important; }
 
 .cover {
-  padding-top: 4.8rem;
   max-height: 56rem;
   background: #fff; }
   @media (min-width: 768px) {
@@ -6298,7 +6437,7 @@ a.link:hover, a.link:focus {
     font-weight: bold; }
 
 .navbar {
-  padding: .8rem 1.6rem;
+  padding: 1.2rem 1.6rem;
   background: #000;
   color: #fff; }
   @media (min-width: 768px) {

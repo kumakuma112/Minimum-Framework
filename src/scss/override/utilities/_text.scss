@@ -16,8 +16,8 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .al#{$infix}   { text-align: left !important; }
-    .ar#{$infix}  { text-align: right !important; }
+    .al#{$infix} { text-align: left !important; }
+    .ar#{$infix} { text-align: right !important; }
     .ac#{$infix} { text-align: center !important; }
 
     // Weight and italics

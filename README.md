@@ -10,18 +10,17 @@
 
 - [SCSS] Webpackでビルド
 - [SCSS] WebpackとPostCSSでプレフィックス反映 
-- [SCSS] 日本語に変更
-- [SCSS] 1remを16pxから10pxに変更
-- [SCSS] 汎用クラスを短縮&強化
-- [SCSS] レスポンシブのクラスを短縮（s,m,l,xl）
-- [SCSS] 学習コストが高いコンポーネント系を削除
+- [SCSS] BootstrapのSCSSを日本語に変更
+- [SCSS] BootstrapのSCSSを1remを16pxから10pxに変更
+- [SCSS] Bootstrapの汎用クラスを短縮&強化
+- [SCSS] Bootstrapのレスポンシブのクラスを短縮（s,m,l,xl）
+- [SCSS] Bootstrapの学習コストが高いコンポーネント系を削除
 
 - [JS] Webpackで1ファイルにビルド
 - [JS] ES6で記述
 - [JS] ローディングJS追加
 - [JS] ハンバーガーメニューJS追加
-- [JS] スクロールトップJS追加
-- [JS] アンカーリンクアニメーションJS追加
+- [JS] アンカーリンクJS追加
 - [JS] Animate.CSS用のパララックスアニメーションJS追加
 - [JS] Bootstrap4のJSを削除
 

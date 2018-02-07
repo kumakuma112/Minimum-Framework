@@ -10558,10 +10558,22 @@ var Loader = function Loader(target) {
   (0, _jquery2.default)(function () {
     (0, _jquery2.default)(window).on('load', function () {
       (0, _jquery2.default)(tar).delay(700).fadeOut(500);
+      var scroll = (0, _jquery2.default)(window).scrollTop();
+      if (scroll == 0) {
+        setTimeout(function () {
+          scrollTo(0, 1);
+        }, 1);
+      }
     });
 
     function stopload() {
       (0, _jquery2.default)(tar).delay(700).fadeOut(300);
+      var scroll = (0, _jquery2.default)(window).scrollTop();
+      if (scroll == 0) {
+        setTimeout(function () {
+          scrollTo(0, 1);
+        }, 1);
+      }
     }
     setTimeout(_jquery2.default.proxy(stopload(), undefined), 5000);
   });
